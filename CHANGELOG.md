@@ -6,17 +6,27 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.0.2] - 2018-09-26
+### Added
+- adding spritesheets as static resources
+
 ### Changed
 - tests of website are based on Puppeteer + Mocha instead of PhantomJS + CasperJS ([PhantomJS project is discontinued](https://github.com/ariya/phantomjs/issues/15344))
 - refactoring of the website
+- build process revised and simplified
+- documentation update (related with changes in build process)
+- dependencies/libraries update
 
 ### Fixed
-- renaming of AI script to the same name results in removing it
+- Bugfix: renaming of AI script to the same name results in removing it
 
 ### Removed
 - removed CasperJS dependency (replaced by Mocha)
 - removed PhantomJS dependency (replaced by Puppeteer)
+- removed Pixi Packer dependency
+- removed ImageMagic / GraphicsMagic dependency
 - removing gulp-mocha dependency (running Mocha directly)
+- removing building spritesheets from build process to make it simpler
 
 ## [2.0.1] - 2018-07-15
 ### Added
