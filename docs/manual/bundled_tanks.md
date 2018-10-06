@@ -26,7 +26,7 @@ tank.loop(function(state, control) {
 
 ### Strategy
 
-Moving through the battlefield searching for the enemy. It turns every time when hitting a wall and keep going. **Crawler** is not actively scanning for enemies however, when it spots a target in front of the radar, it will shoot.
+Moving through the battlefield searching for the enemy. It turns every time it hits a wall and then keeps going. **Crawler** is not actively scanning for enemies; however, when it spots a target in front of the radar, it will shoot.
 
 ### Source Code
 
@@ -73,7 +73,7 @@ tank.loop(function(state, control) {
 
 ### Strategy
 
-Not much strategy here. Just keep turning and shooting in all directions. Maybe some bullets will hit a target :) Could be a good enemy when testing bullets dodging algorithms.
+Not much strategy here. Just keep turning and shooting in all directions. Maybe some bullets will hit a target :) Could be a good enemy when testing bullet dodging algorithms.
 
 ### Source Code
 
@@ -216,10 +216,10 @@ tank.loop(function(state, control) {
 
 There are a few elements of the strategy:
 - Find an enemy and keep it on your radar
-- Have perpendicularly position and move sideways to avoid bullets
+- Positon your tank perpendicular to the enemy and move sideways to avoid bullets
 - Keep shooting the target
 
-This tank is not moving through the battle field to search for an enemy. The only reason to move is to dodge a bullet.
+This tank is not moving through the battle field to search for an enemy. The only reason it moves is to dodge a bullet.
 
 ### Source Code
 
@@ -353,7 +353,7 @@ tank.loop(function(state, control) {
 ## Sniper
 
 ### Strategy
-Find a target by scanning surroundings and keep shooting it. Sniper never moves
+Find a target by scanning surroundings and keep shooting it. Sniper never moves.  This is also good for testing your ability to dodge.
 
 ### Source Code
 
